@@ -10,7 +10,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Load cutome actions cache
-        uses: ./.guthub/actions/cashed-deps-actions      #added custome action path
+        uses: ./.github/actions/cashed-deps-actions      #added custome action path
       - name: Lint code
         run: npm run lint
   test:
